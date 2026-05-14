@@ -441,6 +441,40 @@
     color: #6b4a00;
   }
   .modal-tip strong { color: #4a3000; }
+
+  .button {
+    display: inline-block;
+    padding: 14px 24px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+
+    background: linear-gradient(
+        90deg,
+        red,
+        orange,
+        yellow,
+        green,
+        cyan,
+        blue,
+        violet,
+        red
+    );
+
+    background-size: 400%;
+    animation: rainbowFlow 6s linear infinite;
+}
+
+@keyframes rainbowFlow {
+    0% {
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: 400%;
+    }
+}
 </style>
 </head>
 <body>
@@ -455,7 +489,7 @@
         <br /><em>yea cuz</em></h1>
       <p class="hero-sub">
         <a href="about.html">
-          <button style="background-color: rgb(38, 194, 202); color: rgb(0, 0, 0); padding: 10px;">Watch this lol</button>
+          <button class="button">Watch this lol</button>
         </a>
       </p>
       <div class="hero-stats">
